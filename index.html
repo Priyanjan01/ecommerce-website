@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>funkyfactory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="fflogo.jpg" alt="Funky Factory">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart">View Cart</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <h1>Welcome to Funky Factory</h1>
+            <p>Explore our wide range of products.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </section>
+
+
+        <section class="products" id="shop">
+            <!-- Product Cards -->
+
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Funky Jacket</h2>
+                <p class="price">$40</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 1">
+                <h2>Funky Hoodie</h2>
+                <p class="price">$25</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 1">
+                <h2>Funky T-shirt</h2>
+                <p class="price">$10</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product4.jpg" alt="Product 1">
+                <h2>Funky Bagpack</h2>
+                <p class="price">$15</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product5.jpg" alt="Product 1">
+                <h2>Funky Phone cover</h2>
+                <p class="price">$8</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product6.jpg" alt="Product 1">
+                <h2>Funky Mask</h2>
+                <p class="price">$4</p>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <!-- Repeat Product Cards for different products -->
+        </section>
+        <section id="cart" class="cart">
+            <h3><button id="view-cart-btn">View Cart</button></h3>
+            <div id="cart-items"></div>
+            <button>Buy Now></button>
+        </section>
+        <section id="about" class="about">
+            <p>
+            <h2>About Funky Factory Clothing Merchandise</h2><br>
+            At Funky Factory Clothing Merchandise, we're not just another fashion label; we're a celebration of vibrant
+            expressions and unique styles. Established with a passion for redefining fashion norms, our brand embodies
+            creativity, individuality, and a zest for life.<br>
+
+            <h3>Our Vision</h3><br>
+            Our vision is to be more than just a clothing brand. We aim to inspire individuals to embrace their distinct
+            personalities through the power of fashion. We believe that clothing is an art form—a canvas to express your
+            true self. Our designs reflect a fusion of bold patterns, eclectic colors, and innovative styles, empowering
+            you to stand out from the crowd.<br>
+
+            <h3>The Funky Factory Experience</h3><br>
+            Step into the world of Funky Factory and experience a fusion of contemporary trends with a touch of
+            unconventional flair. Each garment is meticulously crafted with precision and passion, blending quality
+            materials with imaginative designs. From street-style essentials to statement pieces, our collections are
+            curated to ignite your imagination and redefine your wardrobe.<br>
+
+            <h3>Sustainable Fashion Commitment</h3><br>
+            We're committed to sustainability. At Funky Factory, we understand the importance of ethical practices and
+            reducing our environmental footprint. Our dedication to sustainable fashion extends from sourcing
+            eco-friendly materials to minimizing waste in our production processes, ensuring every creation aligns with
+            our commitment to a greener future.<br>
+
+            <h3> Join the Funky Family</h3><br>
+            Funky Factory Clothing Merchandise is more than a brand; it's a community of trendsetters, risk-takers, and
+            those who dare to be different. Join us on this exhilarating journey and celebrate your individuality with
+            our bold and dynamic collections.<br>
+
+            At Funky Factory Clothing Merchandise, embrace your unique style and make every outfit a statement!<br></p>
+            </section>
+
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for inquiries.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="button" onclick="validateForm()">Submit</button>
+            </form>
+            <p>Visit us at: [Street: Navjivan Society, Bldg. # 3 Dr. Bhadkamkar Marg, Grant Road<br>
+                City: Aurangabad<br>
+                State/province/area: Bihar<br>
+                Phone number: 0000000001<br>
+                Zip code: 824101<br>
+                Country calling code: +91<br>
+                Country: India]</p>
+            <p>Call us at: [000000000]</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Funky Factory All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
